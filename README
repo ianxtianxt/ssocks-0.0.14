@@ -1,6 +1,6 @@
-第一步，用 sSocks（https://sourceforge.net/projects/ssocks/）在 VPS 上建立 3388 与 3389 端口对应关系，实现流量互通：
+第一步，用sSocks在VPS上建立3388与3389端口对应关系，实现流量互通：
 
-root@kali:~#/root/ssocks-0.0.14/src/rcsocks -l 3389 -p 3389 -vv
+root @ kali：〜＃/ root / ssocks-0.0.14 / src / rcsocks -l 3389 -p 3389 -vv
 
 
 第二步，从攻击端连接 VPS 的 3388 端口，建议用 freerdp 而非 rdesktop，因为前者支持远程与本地连接等待、文本复制粘贴、挂载远程文件系统：
